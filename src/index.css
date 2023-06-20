@@ -1,1 +1,288 @@
-@import 'tailwindcss/tailwind.css';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+h1 {
+  color: #26272b !important;
+  margin-top: 1.125rem !important;
+  margin-bottom: 2rem !important;
+  font-family: PolySans, sans-serif;
+  font-size: 5.125rem !important;
+  font-weight: 400 !important;
+  line-height: 120% !important;
+}
+
+h5 {
+  color: #70707b !important;
+  margin-top: 0.5rem !important;
+  margin-bottom: 2rem !important;
+  font-family: PolySans, sans-serif;
+  font-size: 1.375rem !important;
+  font-weight: 400 !important;
+  line-height: 160% !important;
+}
+
+.primary-button {
+  height: 44px;
+  letter-spacing: 0.5px;
+  background-color: #26272b;
+  border-radius: 40px;
+  padding: 12px 18px 11px;
+  font-family: PolySans, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px !important;
+  transition: all 0.2s ease-out;
+}
+
+.button-normal.button-hover {
+  transition: all 0.2s ease-out;
+}
+
+.button-normal {
+  height: 44px;
+  color: #26272b;
+  white-space: normal;
+  background-color: #f4f4f5;
+  border-radius: 8px;
+  align-items: center;
+  margin-left: 0;
+  margin-right: 8px;
+  padding: 14px 16px 13px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+}
+
+.go-to-dashboard-button:hover {
+  background-color: #3f3f46 !important;
+}
+
+.button-normal:hover {
+  background-color: aliceblue;
+}
+
+.w-button {
+  line-height: inherit;
+  cursor: pointer;
+  border: 0;
+}
+
+.header > div:first-child {
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform-style: preserve-3d;
+}
+
+.navbar-lg {
+  height: 72px;
+  background-color: #fcfcfc;
+  border-bottom-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  margin-left: -16px;
+  margin-right: -16px;
+  padding-left: 32px;
+  padding-right: 18px;
+  display: flex;
+  position: relative;
+  /* top: 0; */
+}
+
+.logo-container {
+  width: auto;
+  flex: 0 5 25%;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.nav-menu-container {
+  object-fit: contain;
+  background-color: transparent;
+  flex-wrap: nowrap;
+  flex: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /* position: static; */
+}
+
+.menu-lg-product-button-image {
+  width: 40px;
+  height: 40px;
+}
+
+.announcement {
+  height: auto;
+  grid-column-gap: 8px;
+  background-color: #f4f4f5;
+  border-radius: 22px;
+  align-items: center;
+  padding: 8px 12px 8px 8px;
+  font-weight: 300;
+  line-height: 42px;
+  text-decoration: none;
+  transition: all 0.2s ease-out;
+  display: flex;
+}
+
+.announcement:hover {
+  background-color: #e4e4e7;
+}
+
+.announcement-chicklet {
+  height: auto;
+  max-height: 26px;
+  background-color: #155eef;
+  border-radius: 13px;
+  justify-content: center;
+  align-self: auto;
+  align-items: center;
+  padding: 6px 8px 5px;
+  font-size: 12px;
+  line-height: 14.4px;
+  display: flex;
+}
+
+.announcement-chicklet-text {
+  height: auto;
+  color: #f4f4f5;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  line-height: 12px;
+  text-decoration: none;
+}
+
+.announcement-text {
+  color: #26272b;
+  text-align: center;
+  letter-spacing: 0.2px;
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 0.875rem;
+  font-weight: 100;
+  line-height: 100%;
+  text-decoration: none;
+}
+
+.hero-heading-left {
+  max-width: 1120px;
+  margin: 80px auto;
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+
+/* https://codepen.io/rhinodavid/pen/PoyGmxo */
+.hero-animation {
+  width: 360px;
+  height: 360px;
+  position: relative;
+}
+.hero-animation > img {
+  width: 360px;
+  height: 360px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: 16s linear infinite go-bananas;
+}
+@media screen and (max-width: 991px) and (min-width: 479px) {
+  .hero-animation {
+    width: 200px;
+    height: 200px;
+  }
+  .hero-animation > img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 478px) {
+  .hero-animation {
+    width: 144px;
+    height: 144px;
+  }
+  .hero-animation > img {
+    width: 144px;
+    height: 144px;
+  }
+}
+.hero-animation > img:nth-child(5) {
+  animation-delay: -16s;
+}
+.hero-animation > img:nth-child(4) {
+  animation-delay: -12.8s;
+}
+.hero-animation > img:nth-child(3) {
+  animation-delay: -9.6s;
+}
+.hero-animation > img:nth-child(2) {
+  animation-delay: -6.4s;
+}
+.hero-animation > img:nth-child(1) {
+  animation-delay: -3.2s;
+}
+
+@keyframes go-bananas {
+  /* going out */
+  0% {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0);
+  }
+  2.5% {
+    transform: scale(1.2);
+    filter: blur(25px);
+    opacity: 0;
+    animation-timing-function: ease-out;
+  }
+  /* coming in */
+  80% {
+    transform: scale(0.35);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  83% {
+    transform: scale(0.9);
+    opacity: 1;
+    filter: blur(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+    filter: blur(0px);
+    animation-timing-function: linear;
+  }
+}
+
+.trusted-header > p {
+  color: #70707b;
+  margin-bottom: 1rem;
+  font-family: PolySans, sans-serif;
+  font-size: 1.125rem;
+  font-weight: 100;
+  line-height: 170%;
+}
+
+.trusted-grid-lg-md {
+  grid-column-gap: 16px;
+  grid-row-gap: 8px;
+  object-fit: cover;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 0;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+.trusted-by-img {
+  max-height: 60%;
+  object-fit: contain;
+  padding-left: 16px;
+  padding-right: 16px;
+}
