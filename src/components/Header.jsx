@@ -3,7 +3,7 @@ import React from "react"
 const Header = () => {
   return (
     <>
-      <nav className="z-10 bg-transparent sticky top-0 header">
+      <nav className="z-10 bg-[#fcfcfc] sticky top-0 header rounded-bl-[40px] rounded-br-[40px]">
         <div className="container navbar-lg">
           <div className="logo-container">
             <a
